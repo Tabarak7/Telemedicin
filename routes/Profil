@@ -1,0 +1,25 @@
+const express = require('express');
+const path = require('path');
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+
+// Rute til login-side
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '+page.svelte'));
+});
+
+// Rute til profil-side
+app.get('/profil', (req, res) => {
+    res.sendFile(path.join(__dirname, 'profil.html')); 
+});
+
+// Login handling
+app.post('/login', (req, res) => {
+    res.redirect('/profil');
+});
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server lytter på http://localhost:${port}`);
+});

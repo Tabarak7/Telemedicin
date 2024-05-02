@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .profile-description {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .profile-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .profile-list li {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-name">John Doe</div>
+        <div class="profile-description">Diabetes Type II Patient</div>
+        <ul class="profile-list">
+            <li>Seneste blodsukkerniveau: 7.8 mmol/L</li>
+            <li>Foretrukne lav-carb snacks: Nødder, grøntsager</li>
+            <li>Daglig aktivitet: 30 minutters gåtur</li>
+            <li>Medicinering: Metformin</li>
+        </ul>
+    </div>
+</body>
+</html>
